@@ -133,24 +133,37 @@ a:visited{
 .recently-played{
   border: 1px solid red;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.recently-played h2,
+.creato-per h2,
+.artisti h2{
+  width: 100%;
+  padding: 10px;
 }
 .cover{
-  width: 100%;
-  display: flex;
-
+  width: 25%;
 }
 .cover img{
-  width: 20%;
+  width: 100%;
+  padding: 5%;
+
 }
 /* creato-per ---------------------------*/
 .creato-per{
   border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
 }
 /* artisti ------------------------------*/
 .artisti{
   border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
 }
 /* PLAYER ------------------------------------*/
