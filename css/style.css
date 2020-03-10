@@ -1,0 +1,225 @@
+/* REGOLE GENERALI ------------------------*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+span{
+  display: inline-block;
+}
+a,
+a:link,
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+/* MAIN ------------------------------------*/
+#main{
+  background-color: black;
+  margin-bottom: 90px;
+  display: flex;
+}
+/* MENU-SX --------------------------------*/
+.menu{
+  width: 25%;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* menu-nav ----------------------*/
+.menu-nav{
+  border: 1px solid white;
+  height: 75%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo,
+.home,
+.playlist{
+  width: 100%;
+  border: 1px solid red;
+}
+.logo img{
+  width: 80%;
+  padding: 20px;
+}
+.home ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home ul li{
+  display: flex;
+  align-items: center;
+}
+.home ul li img{
+  width: 18%;
+  padding: 9px 6px 0 9px;
+}
+.playlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* menu-utente ---------------------*/
+.menu-utente{
+  border: 1px solid white;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.installa-app{
+  border: 1px solid red;
+  width: 100%;
+}
+.utente {
+  width: 100%;
+  border: 1px solid red;
+}
+.utente img{
+  width: 10%;
+  border-radius: 50%;
+  background-color: grey;
+  padding: 2px;
+}
+/* menu-xs -------------------------*/
+.menu-xs{
+  width: 5%;
+  display: none;
+}
+/* NAVIGAZIONE ------------------------------*/
+#navigazione{
+  display: flex;
+  flex-direction: column;
+  background: #141922;
+  width: 75%;
+  color: white;
+  margin-left: 25%;
+
+}
+/* upgrade -----------------------------*/
+.upgrade{
+  background-color: #0C0F14;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 25%;
+  z-index: 100;
+}
+/* MAIN NAV -----------------------------*/
+.main-nav{
+  margin-top: 100px;
+  min-height: calc(100% - 100px);
+  border: 1px solid white;
+}
+/* main-nav-menu ------------------------*/
+.main-nav-menu{
+  border: 1px solid red;
+
+}
+/* recently-played ----------------------*/
+.recently-played{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.cover{
+  width: 100%;
+  display: flex;
+
+}
+.cover img{
+  width: 20%;
+}
+/* creato-per ---------------------------*/
+.creato-per{
+  border: 1px solid red;
+
+}
+/* artisti ------------------------------*/
+.artisti{
+  border: 1px solid red;
+
+}
+/* PLAYER ------------------------------------*/
+#player{
+  background-color: #282828;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+/* brano ----------------------------------*/
+.brano{
+  border: 1px solid red;
+  width: 25%;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copertina{
+  border: 1px solid red;
+  width: 25%;
+}
+.nome{
+  border: 1px solid red;
+  width: 50%;
+}
+.icon{
+  border: 1px solid red;
+  width: 25%;
+}
+
+/* media-player ---------------------------*/
+.media-player{
+  border: 1px solid red;
+  width: 50%;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.controller{
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.time{
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+/* setting --------------------------------*/
+.setting{
+  border: 1px solid red;
+  width: 25%;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.setting ul{
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  width: 100%;
+}
