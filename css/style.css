@@ -33,7 +33,7 @@ a:visited{
   position: fixed;
   top: 0;
   left: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   /* display: none; */
 
 }
@@ -343,64 +343,128 @@ width: 100%;
   left: 0;
   width: 100%;
   display: flex;
+  color: white;
 }
 /* brano ----------------------------------*/
 .brano{
-  border: 1px solid red;
   width: 25%;
   min-height: 90px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .copertina{
-  border: 1px solid red;
-  width: 25%;
+
+}
+.copertina img{
+  width: 50px;
 }
 .nome{
-  border: 1px solid red;
-  width: 50%;
+  width: 25%;
+  margin-left: 10px;
+
+}
+.nome h3{
+  font-size: 12px;
+  line-height: 12px;
+  padding-bottom: 3px;
+}
+.nome p{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.2);
 }
 .icon{
-  border: 1px solid red;
   width: 25%;
+  color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
 }
+.icon span{
+  margin-right: 10px;
 
+}
 /* media-player ---------------------------*/
 .media-player{
-  border: 1px solid red;
   width: 50%;
   min-height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+}
+.media-player-content{
+  display: flex;
+  flex-direction: column;
 }
 .controller{
-  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+.controller ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.controller ul li{
+  padding: 0 10px;
+  font-size: 15px;
+}
+.controller ul li:nth-child(3){
+  font-size: 30px;
+  padding: 0 20px;
+}
 .time{
-  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
-
+  align-items: center;
+}
+.time-passed{
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 60%;
+  height: 4px;
+  border-radius: 5px;
+  margin: 0 30px;
+}
+.remaining-time{
+  background: white;
+  width: 20%;
+  height: 4px;
+  border-radius: 5px;
+}
+.time span{
+  font-size: 10px;
 }
 /* setting --------------------------------*/
 .setting{
-  border: 1px solid red;
   width: 25%;
   min-height: 90px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .setting ul{
   display: flex;
-  justify-content: center;
-  border: 1px solid red;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.setting ul li{
+  padding: 0 10px;
+  font-size: 13px;
+}
+.setting ul li:last-child{
+  width: 55%;
+  padding-right: 0!important;
+}
+.volume{
+  background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
+  height: 4px;
+  border-radius: 5px;
+}
+.volume-on{
+  background: white;
+  width: 20%;
+  height: 4px;
+  border-radius: 5px;
 }
