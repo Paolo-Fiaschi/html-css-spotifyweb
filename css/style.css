@@ -25,7 +25,7 @@ a:visited{
 }
 /* MENU-SX --------------------------------*/
 .menu{
-  width: 25%;
+  width: 230px;
   height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
@@ -36,22 +36,20 @@ a:visited{
 }
 /* menu-nav ----------------------*/
 .menu-nav{
-  border: 1px solid white;
   height: 75%;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .logo,
 .home,
 .playlist{
   width: 100%;
-  border: 1px solid red;
 }
 .logo img{
-  width: 80%;
-  padding: 20px;
+  width: 70%;
+  margin-left: 20px;
 }
 .home ul{
   width: 100%;
@@ -64,9 +62,20 @@ a:visited{
   display: flex;
   align-items: center;
 }
+.home ul li:first-child{
+  border-left: 2px solid greenyellow;
+}
 .home ul li img{
-  width: 18%;
-  padding: 9px 6px 0 9px;
+  width: 20%;
+  margin: 0 5px 5px 0;
+  padding-left: 20px;
+}
+.home ul li span{
+  font-size: 13px;
+  color: #6F7277;
+}
+.home ul li span:first-child{
+  color: white;
 }
 .playlist{
   display: flex;
@@ -76,7 +85,7 @@ a:visited{
 /* menu-utente ---------------------*/
 .menu-utente{
   border: 1px solid white;
-  height: 15%;
+  height: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,19 +115,19 @@ a:visited{
   display: flex;
   flex-direction: column;
   background: #141922;
-  width: 75%;
+  width: calc(100% - 230px);
   color: white;
-  margin-left: 25%;
+  margin-left: 230px;
 
 }
 /* upgrade -----------------------------*/
 .upgrade{
   background-color: rgba(0, 0, 0, 0.4);
   height: 100px;
-  width: 100%;
+  width: calc(100% - 230px);
   position: fixed;
   top:0;
-  left: 25%;
+  left: 230px;
   z-index: 1;
 }
 .upgrade a{
@@ -137,7 +146,7 @@ a:visited{
 /* MAIN NAV -----------------------------*/
 .main-nav{
   margin-top: 100px;
-  min-height: calc(100% - 100px);
+  min-height: calc(100% - 90px);
 }
 /* main-nav-menu ------------------------*/
 .main-nav-menu{
@@ -163,9 +172,9 @@ a:visited{
 .creato-per,
 .artisti{
   display: flex;
-  flex-wrap: wrap;
-  width: 98%;
-  margin: 1%;
+  flex-direction: column;
+  width: calc(100% - 15px);
+  margin: 15px;
 }
 .recently-played h2,
 .creato-per h2,
