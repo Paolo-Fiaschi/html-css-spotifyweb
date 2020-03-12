@@ -73,7 +73,7 @@ a:visited{
   cursor: pointer;
 }
 .home ul li:first-child{
-  border-left: 2px solid greenyellow;
+  border-left: 3px solid greenyellow;
 }
 .home ul li img{
   width: 20%;
@@ -150,6 +150,7 @@ a:visited{
   width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 .profilo{
   width: 25px;
@@ -233,7 +234,8 @@ width: 100%;
   width: calc(100% - 230px);
   color: white;
   margin-left: 230px;
-  /* overflow: scroll; */
+  overflow: scroll;
+  height: calc(100vh - 90px);
 }
 /* upgrade -----------------------------*/
 .upgrade{
@@ -373,6 +375,13 @@ width: 100%;
   color: #6F7277;
   font-weight: lighter;
   padding-top: 6px;
+}
+.artisti .layover{
+  border-radius: 50%;
+}
+.artisti img{
+  border-radius: 50%;
+
 }
 /* PLAYER ------------------------------------*/
 #player{
