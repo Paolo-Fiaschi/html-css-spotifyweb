@@ -514,16 +514,16 @@ width: 100%;
 /* setting --------------------------------*/
 .setting{
   width: 25%;
-  min-height: 90px;
+  /* min-height: 90px; */
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  /* align-items: center; */
 }
 .setting ul{
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
-  width: 50%;
+  /* width: 50%; */
 }
 .setting ul li{
   padding: 0 10px;
