@@ -33,7 +33,6 @@ a:visited{
   left: 0;
   letter-spacing: 0.5px;
   /* display: none; */
-
 }
 /* menu-nav ----------------------*/
 .menu-nav{
@@ -84,9 +83,6 @@ a:visited{
   color: white!important;
 }
 .playlist{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   overflow: auto;
 }
 .playlist h5{
@@ -259,7 +255,6 @@ width: 100%;
 /* MAIN NAV -----------------------------*/
 .main-nav{
   margin-top: 100px;
-  /* min-height: calc(100% - 90px); */
   height: 100%;
 }
 /* main-nav-menu ------------------------*/
@@ -395,7 +390,6 @@ width: 100%;
 /* brano ----------------------------------*/
 .brano{
   width: 25%;
-  /* min-height: 90px; */
   display: flex;
   align-items: center;
 }
@@ -436,19 +430,12 @@ width: 100%;
 /* media-player ---------------------------*/
 .media-player{
   width: 40%;
-  /* min-height: 90px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* .media-player-content{
-  display: flex;
-  flex-direction: column;
-} */
 .controller{
   width: 100%;
-  /* display: flex;
-  justify-content: center; */
 }
 .controller ul{
   display: flex;
@@ -514,16 +501,12 @@ width: 100%;
 /* setting --------------------------------*/
 .setting{
   width: 25%;
-  /* min-height: 90px; */
   display: flex;
   justify-content: flex-end;
-  /* align-items: center; */
 }
 .setting ul{
   display: flex;
-  /* justify-content: flex-end; */
   align-items: center;
-  /* width: 50%; */
 }
 .setting ul li{
   padding: 0 10px;
@@ -567,90 +550,138 @@ width: 100%;
 }
 
 /* MEDIA QUERY -------------------------------------------------------*/
-/* versione extra mobile xs */
 
-@media screen and (max-width:768px) {
+/* versione xxs mobile -------------------------------*/
 
-  /* MENU-SX --------------------------------*/
+@media screen and (max-width:660px) {
+
+  /* menu-sx --------------------------------*/
   .menu{
-    width: 230px;
-    height: calc(100vh - 90px);
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    letter-spacing: 0.5px;
     display: none;
-
   }
   /* menu-xs -------------------------*/
   .menu-xs{
-    width: 50px;
-    /* display: none; */
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: calc(100vh - 90px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
   }
   /* NAVIGAZIONE ------------------------------*/
   #navigazione{
-    display: flex;
-    flex-direction: column;
-    background: #141922;
-    width: calc(100% - 50px);
-    color: white;
     margin-left: 50px;
-
+    width: calc(100% - 50px);
   }
   /* upgrade -----------------------------*/
   .upgrade{
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 100px;
-    width: calc(100% - 50px);
     position: fixed;
     top:0;
     left: 50px;
+    width: calc(100% - 50px);
   }
-
-
-
+  /* main nav --------------------------*/
   .main-nav-menu ul{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
     flex-wrap: wrap;
     max-width: 70%;
   }
   .main-nav-menu ul li{
-    padding: 0 10px;
-    color: #6F7277;
-    cursor: pointer;
-    font-size: 14px;
     margin-bottom: 30px;
   }
   /* recently-played, creato-per, artisti ----------------------*/
   .recently-played,
   .creato-per,
   .artisti{
-    display: flex;
-    flex-direction: column;
     width: calc(70% - 15px);
-    margin: 15px;
   }
-
   .recently-played ul li,
   .creato-per ul li,
   .artisti ul li{
     flex-basis: calc(100%/2 - 15px);
-    margin-right: 5px;
-    cursor: pointer;
-    flex-shrink: 0;
+  }
+  .recently-played ul li{
+    margin-bottom: 15px;
+  }
+/* player -----------------------------------*/
+
+  /* brano ----------------------------------*/
+  .brano{
+    width: 20%;
+    flex-wrap: wrap;
+  }
+  .nome h3{
+    font-size: 13px;
+  }
+  .icon{
+    width: 25%;
+    display: flex;
+  }
+  /* media-player ---------------------------*/
+  .media-player{
+    width: 30%;
+  }
+  .controller ul li{
+    padding: 0 5px;
+  }
+  .controller ul li:nth-child(3){
+    font-size: 25px;
+    padding: 0 10px;
+  }
+  .remaining-time{
+    margin: 0 2px;
+  }
+  /* setting --------------------------------*/
+  .setting ul{
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+  .setting ul li{
+    padding: 0 4px;
+    font-size: 15px;
+  }
+  .punto-volume{
+    position: absolute;
+    top: 70%;
+    right: 21%;
+  }
+}
+/* versione extra mobile xs --------------------------*/
+
+@media screen and (min-width:661px) and (max-width:768px) {
+
+  /* menu-sx --------------------------------*/
+  .menu{
+    display: none;
+  }
+  /* menu-xs -------------------------*/
+  .menu-xs{
+    display: flex;
+  }
+  /* NAVIGAZIONE ------------------------------*/
+  #navigazione{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+  }
+  /* upgrade -----------------------------*/
+  .upgrade{
+    position: fixed;
+    top:0;
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+  /* main nav --------------------------*/
+  .main-nav-menu ul{
+    flex-wrap: wrap;
+    max-width: 70%;
+  }
+  .main-nav-menu ul li{
+    margin-bottom: 30px;
+  }
+  /* recently-played, creato-per, artisti ----------------------*/
+  .recently-played,
+  .creato-per,
+  .artisti{
+    width: calc(70% - 15px);
+  }
+  .recently-played ul li,
+  .creato-per ul li,
+  .artisti ul li{
+    flex-basis: calc(100%/2 - 15px);
   }
   .recently-played ul li{
     margin-bottom: 15px;
@@ -659,54 +690,36 @@ width: 100%;
   .icon span{
     margin: 0 20px;
   }
-
 }
 
-/* versione mobile sm */
+/* versione mobile sm -----------------------------*/
 
 @media screen and (min-width:769px) and (max-width:992px){
 
+  /* main nav --------------------------*/
   .main-nav-menu ul{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
     flex-wrap: wrap;
     max-width: 70%;
   }
   .main-nav-menu ul li{
-    padding: 0 10px;
-    color: #6F7277;
-    cursor: pointer;
-    font-size: 14px;
     margin-bottom: 30px;
   }
-
   /* recently-played, creato-per, artisti ----------------------*/
   .recently-played,
   .creato-per,
   .artisti{
-    display: flex;
-    flex-direction: column;
     width: calc(70% - 15px);
-    margin: 15px;
   }
-
   .recently-played ul li,
   .creato-per ul li,
   .artisti ul li{
     flex-basis: calc(100%/2 - 15px);
-    margin-right: 5px;
-    cursor: pointer;
-    flex-shrink: 0;
   }
   .recently-played ul li{
     margin-bottom: 15px;
   }
-
 }
-
-
-/* versione tablet md */
+/* versione tablet md ----------------------------*/
 
 @media screen and (min-width:993px) and (max-width:1199px){
 
@@ -717,17 +730,11 @@ width: 100%;
   .recently-played ul li{
     margin-bottom: 15px;
   }
-
   .recently-played ul li,
   .creato-per ul li,
   .artisti ul li{
     flex-basis: calc(100%/4 - 15px);
-    margin-right: 5px;
-    cursor: pointer;
-    flex-shrink: 0;
   }
-
-
 }
 
 /* versione dekstop lg */
