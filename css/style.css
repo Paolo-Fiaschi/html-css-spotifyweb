@@ -20,7 +20,6 @@ a:visited{
 /* MAIN ------------------------------------*/
 #main{
   background-color: black;
-  display: flex;
   height: calc(100% - 90px);
 }
 /* MENU-SX --------------------------------*/
@@ -29,7 +28,6 @@ a:visited{
   height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -59,8 +57,6 @@ a:visited{
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .home ul li{
   display: flex;
@@ -88,10 +84,10 @@ a:visited{
   color: white!important;
 }
 .playlist{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow: scroll;
+  justify-content: space-between; */
+  overflow: auto;
 }
 .playlist h5{
   margin: 0 0 10px 20px;
@@ -234,7 +230,7 @@ width: 100%;
   width: calc(100% - 230px);
   color: white;
   margin-left: 230px;
-  overflow: scroll;
+  overflow: auto;
   height: calc(100vh - 90px);
 }
 /* upgrade -----------------------------*/
@@ -263,7 +259,8 @@ width: 100%;
 /* MAIN NAV -----------------------------*/
 .main-nav{
   margin-top: 100px;
-  min-height: calc(100% - 90px);
+  /* min-height: calc(100% - 90px); */
+  height: 100%;
 }
 /* main-nav-menu ------------------------*/
 .main-nav-menu{
@@ -392,17 +389,15 @@ width: 100%;
   left: 0;
   width: 100%;
   display: flex;
+  justify-content: space-around;
   color: white;
 }
 /* brano ----------------------------------*/
 .brano{
   width: 25%;
-  min-height: 90px;
+  /* min-height: 90px; */
   display: flex;
   align-items: center;
-}
-.copertina{
-
 }
 .copertina img{
   width: 50px;
@@ -440,20 +435,20 @@ width: 100%;
 }
 /* media-player ---------------------------*/
 .media-player{
-  width: 50%;
-  min-height: 90px;
+  width: 40%;
+  /* min-height: 90px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.media-player-content{
+/* .media-player-content{
   display: flex;
   flex-direction: column;
-}
+} */
 .controller{
   width: 100%;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .controller ul{
   display: flex;
