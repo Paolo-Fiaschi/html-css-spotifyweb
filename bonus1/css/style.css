@@ -1,0 +1,686 @@
+/* REGOLE GENERALI ------------------------*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body{
+  font-family:'Montserrat', sans-serif;
+}
+span{
+  display: inline-block;
+}
+a,
+a:link,
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+/* MAIN ------------------------------------*/
+#main{
+  background-color: black;
+  height: calc(100% - 90px);
+}
+/* MENU-SX --------------------------------*/
+.menu{
+  width: 230px;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.5px;
+  /* display: none; */
+}
+/* menu-nav ----------------------*/
+.menu-nav{
+  height: 85vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  width: 100%;
+  padding: 5% 0;
+}
+.logo img{
+  width: 55%;
+  margin-left: 20px;
+}
+.home{
+  margin-bottom: 10px;
+}
+.home ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.home ul li{
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+.home ul li:hover span,
+.home ul li:hover img{
+  color: white!important;
+  cursor: pointer;
+}
+.home ul li:first-child{
+  border-left: 3px solid greenyellow;
+}
+.home ul li img{
+  width: 20%;
+  margin: 0 5px 5px 0;
+  padding-left: 20px;
+}
+.home ul li span{
+  font-size: 13px;
+  color: #6F7277;
+}
+.white{
+  color: white!important;
+}
+.playlist{
+  overflow: auto;
+}
+.playlist h5{
+  margin: 0 0 10px 20px;
+  font-size: 15px;
+}
+.playlist ul{
+  margin-left: 20px;
+  color: #6F7277;
+}
+.add-playlist{
+  font-size: 35px;
+  margin-right: 8px;
+}
+.playlist ul li:first-child{
+  display: flex;
+  align-items: center;
+}
+.playlist ul li{
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.playlist ul li:hover{
+  color: white!important;
+  cursor: pointer;
+}
+
+/* menu-utente ---------------------*/
+.menu-utente{
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+.installa-app{
+  width: 100%;
+  border-bottom: 1px solid #6F7277;
+  color: #6F7277;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.installa-app:hover{
+  color: white;
+}
+.installa-app img{
+  width: 15px;
+  margin-right: 10px;
+}
+.utente {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.profilo{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-right: 8px;
+  overflow: hidden;
+}
+.utente img{
+  width: 100%;
+}
+.utente span{
+  font-size: 15px;
+}
+/* menu-xs -------------------------*/
+.menu-xs{
+  width: 50px;
+  display: none;
+  /* display: flex; */
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+/* menu-xs-top -----------------*/
+.menu-xs-top{
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.menu-xs-top-icon{
+  width: 100%;
+  padding: 3px 10px 8px;
+}
+.menu-xs-top-icon img{
+width: 100%;
+}
+.menu-xs-top-icon img:hover{
+  color: white;
+  cursor: pointer;
+}
+/* menu-xs-bottom --------------*/
+.menu-xs-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 15%;
+
+}
+.menu-xs-bottom-download{
+  margin: 7px auto;
+}
+.menu-xs-bottom-download img{
+  width: 80%;
+}
+.menu-xs-bottom-download img:hover{
+  color: white;
+  cursor: pointer;
+}
+.menu-xs-bottom-profilo{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-right: 8px;
+  overflow: hidden;
+  margin: 7px auto;
+}
+.menu-xs-bottom-profilo img{
+  width: 100%;
+}
+/* NAVIGAZIONE ------------------------------*/
+#navigazione{
+  display: flex;
+  flex-direction: column;
+  background: #141922;
+  width: calc(100% - 230px);
+  color: white;
+  margin-left: 230px;
+  overflow: auto;
+  height: calc(100vh - 90px);
+}
+/* upgrade -----------------------------*/
+.upgrade{
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100px;
+  width: calc(100% - 230px);
+  position: fixed;
+  top:0;
+  left: 230px;
+}
+.upgrade a{
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 15px;
+  line-height: 20px;
+  color:white;
+  position: fixed;
+  top: 30px;
+  right: 50px;
+}
+.upgrade a:hover{
+  transform:scale(1.1,1.1);
+}
+/* MAIN NAV -----------------------------*/
+.main-nav{
+  margin-top: 100px;
+  height: 100%;
+}
+/* main-nav-menu ------------------------*/
+.main-nav-menu{
+}
+.main-nav-menu ul{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.main-nav-menu ul li{
+  padding: 0 10px;
+  color: #6F7277;
+  cursor: pointer;
+  font-size: 14px;
+}
+.main-nav-menu ul li:hover{
+  color: white;
+}
+.greenyellow{
+  border: 1px solid greenyellow;
+  width: 40%;
+  margin: 4px auto 0;
+}
+/* recently-played, creato-per, artisti ----------------------*/
+.recently-played,
+.creato-per,
+.artisti{
+  display: flex;
+  flex-direction: column;
+  width: calc(1400px - 15px);
+  margin: 15px;
+}
+.recently-played h2,
+.creato-per h2,
+.artisti h2{
+  width: 100%;
+  padding: 10px 0;
+}
+.recently-played ul,
+.creato-per ul,
+.artisti ul{
+  display: flex;
+  margin: 30px 0;
+}
+.recently-played ul{
+  justify-content: space-around;
+}
+.recently-played ul li,
+.creato-per ul li,
+.artisti ul li{
+  width: calc(200px - 15px);
+  margin-right: 5px;
+  cursor: pointer;
+}
+.cover{
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+.cover img{
+  width: 100%;
+  height: auto;
+}
+.cover-text,
+.cover-text h3,
+.cover-text h5{
+  max-width: 100%;
+}
+.layover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layover span{
+  font-size: 50px;
+  display: none;
+}
+.recently-played ul li:hover .layover span,
+.creato-per ul li:hover .layover span,
+.artisti ul li:hover .layover span{
+  display: block;
+}
+.recently-played ul li:hover .layover,
+.creato-per ul li:hover .layover,
+.artisti ul li:hover .layover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main-nav h3{
+  text-align: center;
+  font-size: 18px;
+}
+.recently-played h5{
+  text-align: center;
+  color: #6F7277;
+  font-weight: lighter;
+  padding-top: 6px;
+}
+.creato-per h5,
+.artisti h5{
+  color: #6F7277;
+  font-weight: lighter;
+  padding-top: 6px;
+}
+.artisti .layover{
+  border-radius: 50%;
+}
+.artisti img{
+  border-radius: 50%;
+
+}
+/* PLAYER ------------------------------------*/
+#player{
+  background-color: #282828;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+/* brano ----------------------------------*/
+.brano{
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.copertina img{
+  width: 50px;
+}
+.nome{
+  width: 25%;
+  margin-left: 10px;
+}
+.nome h3:hover,
+.nome p:hover{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nome h3{
+  font-size: 12px;
+  line-height: 12px;
+  padding-bottom: 3px;
+}
+.nome p{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.2);
+}
+.icon{
+  width: 25%;
+  color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+}
+.icon span{
+  margin-right: 10px;
+}
+.icon span:hover{
+  color: white;
+  cursor: pointer;
+}
+/* media-player ---------------------------*/
+.media-player{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.controller{
+  width: 100%;
+}
+.controller ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.controller ul li{
+  padding: 0 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.controller ul li:nth-child(3){
+  font-size: 30px;
+  padding: 0 20px;
+}
+.controller ul li:nth-child(3):hover{
+  transform: scale(1.1,1.1);
+}
+.time{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remaining-time{
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 60%;
+  height: 4px;
+  border-radius: 5px;
+  margin: 0 30px;
+  position: relative;
+}
+.time-passed{
+  background: white;
+  width: 20%;
+  height: 4px;
+  border-radius: 5px;
+}
+.time-passed:hover{
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.punto{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: none;
+}
+.time-passed:hover .punto{
+  display: block;
+}
+
+.time span{
+  font-size: 10px;
+}
+/* setting --------------------------------*/
+.setting{
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+.setting ul{
+  display: flex;
+  align-items: center;
+}
+.setting ul li{
+  padding: 0 10px;
+  font-size: 13px;
+}
+.setting ul li:last-child{
+  width: 100%;
+  padding-right: 0!important;
+}
+.volume{
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 80px;
+  height: 4px;
+  border-radius: 5px;
+}
+.volume-on{
+  background: white;
+  width: 20%;
+  height: 4px;
+  border-radius: 5px;
+}
+.punto-volume{
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: none;
+}
+
+.volume-on:hover{
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.volume-on:hover .punto-volume{
+  display: block;
+}
+
+/* MEDIA QUERY -------------------------------------------------------*/
+
+/* versione xxs mobile -------------------------------*/
+
+@media screen and (max-width:660px) {
+
+  /* menu-sx --------------------------------*/
+  .menu{
+    display: none;
+  }
+  /* menu-xs -------------------------*/
+  .menu-xs{
+    display: flex;
+  }
+  /* NAVIGAZIONE ------------------------------*/
+  #navigazione{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+  }
+  /* upgrade -----------------------------*/
+  .upgrade{
+    position: fixed;
+    top:0;
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+  /* main nav --------------------------*/
+  .main-nav-menu ul{
+    flex-wrap: wrap;
+    max-width: 70%;
+  }
+  .main-nav-menu ul li{
+    margin-bottom: 30px;
+  }
+/* player -----------------------------------*/
+
+  /* brano ----------------------------------*/
+  .brano{
+    width: 20%;
+    flex-wrap: wrap;
+  }
+  .nome h3{
+    font-size: 13px;
+  }
+  .icon{
+    width: 25%;
+    display: flex;
+  }
+  /* media-player ---------------------------*/
+  .media-player{
+    width: 30%;
+  }
+  .controller ul li{
+    padding: 0 5px;
+  }
+  .controller ul li:nth-child(3){
+    font-size: 25px;
+    padding: 0 10px;
+  }
+  .remaining-time{
+    margin: 0 2px;
+  }
+  /* setting --------------------------------*/
+  .setting ul{
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+  .setting ul li{
+    padding: 0 4px;
+    font-size: 15px;
+  }
+  .punto-volume{
+    position: absolute;
+    top: 70%;
+    right: 21%;
+  }
+}
+/* versione extra mobile xs --------------------------*/
+
+@media screen and (min-width:661px) and (max-width:768px) {
+
+  /* menu-sx --------------------------------*/
+  .menu{
+    display: none;
+  }
+  /* menu-xs -------------------------*/
+  .menu-xs{
+    display: flex;
+  }
+  /* NAVIGAZIONE ------------------------------*/
+  #navigazione{
+    margin-left: 50px;
+    width: calc(100% - 50px);
+  }
+  /* upgrade -----------------------------*/
+  .upgrade{
+    position: fixed;
+    top:0;
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+  /* main nav --------------------------*/
+  .main-nav-menu ul{
+    flex-wrap: wrap;
+    max-width: 70%;
+  }
+  .main-nav-menu ul li{
+    margin-bottom: 30px;
+  }
+  /* player ----------------*/
+  .icon span{
+    margin: 0 20px;
+  }
+}
+
+/* versione mobile sm -----------------------------*/
+
+@media screen and (min-width:769px) and (max-width:992px){
+
+  /* main nav --------------------------*/
+  .main-nav-menu ul{
+    flex-wrap: wrap;
+    max-width: 70%;
+  }
+  .main-nav-menu ul li{
+    margin-bottom: 30px;
+  }
+}
+/* versione tablet md ----------------------------*/
+
+@media screen and (min-width:993px) and (max-width:1199px){
+
+}
+
+/* versione dekstop lg */
+
+@media screen and (min-width:1200px){
+
+}

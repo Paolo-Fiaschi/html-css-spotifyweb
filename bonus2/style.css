@@ -1,0 +1,14 @@
+/* REGOLE GENERALI -------------------------------*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+span{
+  display: inline-block;
+}
+a,
+a:link,
+a:visited{
+  text-decoration: none;
+}
