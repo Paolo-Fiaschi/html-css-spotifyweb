@@ -578,17 +578,17 @@ width: 100%;
   /* main nav --------------------------*/
   .main-nav-menu ul{
     flex-wrap: wrap;
-    max-width: 70%;
+    /* max-width: 70%; */
   }
   .main-nav-menu ul li{
     margin-bottom: 30px;
   }
   /* recently-played, creato-per, artisti ----------------------*/
-  .recently-played,
+  /* .recently-played,
   .creato-per,
   .artisti{
     width: calc(70% - 15px);
-  }
+  } */
   .recently-played ul li,
   .creato-per ul li,
   .artisti ul li{
@@ -667,17 +667,17 @@ width: 100%;
   /* main nav --------------------------*/
   .main-nav-menu ul{
     flex-wrap: wrap;
-    max-width: 70%;
+    /* max-width: 70%; */
   }
   .main-nav-menu ul li{
     margin-bottom: 30px;
   }
   /* recently-played, creato-per, artisti ----------------------*/
-  .recently-played,
+  /* .recently-played,
   .creato-per,
   .artisti{
     width: calc(70% - 15px);
-  }
+  } */
   .recently-played ul li,
   .creato-per ul li,
   .artisti ul li{
@@ -699,17 +699,17 @@ width: 100%;
   /* main nav --------------------------*/
   .main-nav-menu ul{
     flex-wrap: wrap;
-    max-width: 70%;
+    /* max-width: 70%; */
   }
   .main-nav-menu ul li{
     margin-bottom: 30px;
   }
   /* recently-played, creato-per, artisti ----------------------*/
-  .recently-played,
+  /* .recently-played,
   .creato-per,
   .artisti{
     width: calc(70% - 15px);
-  }
+  } */
   .recently-played ul li,
   .creato-per ul li,
   .artisti ul li{
